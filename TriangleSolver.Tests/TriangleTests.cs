@@ -49,6 +49,45 @@ namespace TriangleSolver.Tests
             Assert.AreEqual("Isosceles triangle", result);
         }
 
+        [Test]
+        public void AnalyzeTriangle_ScaleneTriangle_Valid1_ReturnsScalene()
+        {
+            int side1 = 3, side2 = 4, side3 = 5;
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+            Assert.AreEqual("Scalene triangle", result);
+        }
+
+        [Test]
+        public void AnalyzeTriangle_ScaleneTriangle_Valid2_ReturnsScalene()
+        {
+            int side1 = 7, side2 = 10, side3 = 5;
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+            Assert.AreEqual("Scalene triangle", result);
+        }
+
+        [Test]
+        public void AnalyzeTriangle_ScaleneTriangle_Valid3_ReturnsScalene()
+        {
+            int side1 = 8, side2 = 15, side3 = 17;
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+            Assert.AreEqual("Scalene triangle", result);
+        }
+
+        [Test]
+        public void AnalyzeTriangle_ScaleneTriangle_Valid4_ReturnsScalene()
+        {
+            int side1 = 5, side2 = 12, side3 = 13;
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+            Assert.AreEqual("Scalene triangle", result);
+        }
+
+        [Test]
+        public void AnalyzeTriangle_ScaleneTriangle_Valid5_ReturnsScalene()
+        {
+            int side1 = 11, side2 = 14, side3 = 18;
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+            Assert.AreEqual("Scalene triangle", result);
+        }
 
 
     }
